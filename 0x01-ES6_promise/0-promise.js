@@ -1,4 +1,3 @@
-
 function getResponseFromAPI() {
   return new Promise((resolve) => {
     // Simulating an asynchronous API call
