@@ -1,4 +1,5 @@
 export default class Currency {
+/* eslint-disable no-underscore-dangle */
   constructor(code, name) {
     this._code = code;
     this._name = name;
@@ -11,10 +12,10 @@ export default class Currency {
 
   // Setter for the code attribute
   set code(newCode) {
-    if (typeof newCode === "string") {
+    if (typeof newCode === 'string') {
       this._code = newCode;
     } else {
-      console.error("Error: Invalid code value. Code must be a string.");
+      console.error('Error: Invalid code value. Code must be a string.');
     }
   }
 
@@ -25,10 +26,10 @@ export default class Currency {
 
   // Setter for the name attribute
   set name(newName) {
-    if (typeof newName === "string") {
+    if (typeof newName === 'string') {
       this._name = newName;
     } else {
-      console.error("Error: Invalid name value. Name must be a string.");
+      console.error('Error: Invalid name value. Name must be a string.');
     }
   }
 
