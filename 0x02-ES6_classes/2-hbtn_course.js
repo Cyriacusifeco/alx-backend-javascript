@@ -1,14 +1,14 @@
 export default class HolbertonCourse {
 /* eslint-disable no-underscore-dangle */
   constructor(name, length, students) {
-    this._name = "";
-    this._length = 0;
-    this._students = [];
+    this._name = ''; // Initialize the _name attribute
+    this._length = 0; // Initialize the _length attribute
+    this._students = []; // Initialize the _students attribute
 
     // Use setters to validate and set the attribute values
-    this._name = name;
-    this._length = length;
-    this._students = students;
+    this.name = name;
+    this.length = length;
+    this.students = students;
   }
 
   // Getter for the name attribute
