@@ -9,7 +9,7 @@
   "author": "Cyriacus",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.3.7",
     "mocha": "^x.x.x"
   }
 }
-
