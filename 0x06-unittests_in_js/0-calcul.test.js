@@ -4,8 +4,17 @@ const calculateNumber = require('./0-calcul.js');
 describe('calculateNumber', function() {
   it('should return the sum of two rounded numbers', function() {
     assert.strictEqual(calculateNumber(1, 3), 4);
+  });
+
+  it('should return the sum of two rounded numbers (2)', function() {
     assert.strictEqual(calculateNumber(1, 3.7), 5);
+  });
+
+  it('should return the sum of two rounded numbers (3)', function() {
     assert.strictEqual(calculateNumber(1.2, 3.7), 5);
+  });
+
+  it('should return the sum of two rounded numbers (4)', function() {
     assert.strictEqual(calculateNumber(1.5, 3.7), 6);
   });
 });
