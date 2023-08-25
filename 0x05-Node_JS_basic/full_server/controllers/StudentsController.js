@@ -3,7 +3,8 @@ const readDatabase = require('../utils');
 class StudentsController {
   static async getAllStudents(req, res) {
     try {
-      const data = await readDatabase();
+	    const databasePath = req.databasePath;
+      const data = await readDatabase(databasePath);
       const response = ['This is the list of our students'];
       
       Object.keys(data).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' })).forEach((field) => {
@@ -26,7 +27,8 @@ class StudentsController {
     }
 
     try {
-      const data = await readDatabase();
+	    const databasePath = req.databasePath;
+      const data = await readDatabase(databasePath);
       const studentList = data[major].join(', ');
       res.status(200).send(`List: ${studentList}\n`);
     } catch (error) {
